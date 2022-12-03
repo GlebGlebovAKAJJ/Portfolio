@@ -1,0 +1,210 @@
+body {
+    background-color: black;
+}
+html {
+    font-size: 16px;
+}
+#wrapper {
+    position: relative;
+    margin: 0 auto;
+    width: 1400px;
+}
+header {
+    margin-top: 15px;
+}
+#navigation {
+    display: flex;
+}
+#navigation #logo {
+    margin-left: 25px;
+    text-align: left;
+}
+svg defs stop{
+    transition: .4s;
+  }
+svg:hover defs stop{
+    stop-color: #b6fff1;
+  }
+svg defs feDropShadow {
+    transition: .4s;
+    flood-color: transparent;
+  }
+svg:hover feDropShadow{
+    flood-color: #06deb5;
+  }
+#menu {
+    position: absolute;
+    right: 0;
+    font-size: 1.5rem;
+    list-style: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#menu a:hover {
+    border: 2px double #00ddad;
+    box-shadow: 0 0 15px #00ddad;
+    padding: 5px;
+    border-bottom-left-radius: 0.9rem;
+    border-top-right-radius: 0.9rem;
+}
+a {
+    text-decoration: none;
+    color: #00ddad
+}
+#menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+#homepage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 250px;
+    padding-bottom: 150px;
+}
+#homepage .banner a {
+    text-decoration: none;
+}
+.hotlinks {
+    block-size: fit-content;
+    margin-top: 25px;
+    text-align: center;
+}
+.hotlinks a {
+    display: inline-block;
+}
+.hotlinks a:hover {
+    border-top: 1px solid #00ddad;
+    box-shadow: 0 0 12px #00ddad;
+    border-radius: 50%;
+    
+}
+#homepage .headshot img {
+    border-radius: 50%;
+    background-color: wheat;
+    height: 300px;
+    width: 300px;
+    margin-left: 25px;
+}
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4rem;
+    color: #00ddad;
+}
+h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2rem;
+    color: #00ddad;
+    text-align: center;
+    letter-spacing: 2px;
+}
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    color: #cdfcd7;
+}
+#about {
+    padding: 20px 25px;
+}
+.interests {
+    color: #00ddad;
+    text-align: center;
+}
+.interests img {
+    margin:   0 25px 0 0;
+}
+#about h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 64px;
+    letter-spacing: 5px;
+}
+#about article {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 26px;
+}
+#about article p {
+    margin-top: 40px;
+    letter-spacing: 3px;
+}
+#about article p a:hover {
+    border: 2px double #00ddad;
+    box-shadow: 0 0 15px #00ddad;
+    padding: 0 5px;
+    border-radius: 7px;
+}
+#skills h1, #education h1, #portfolio h1, #contacts h1 {
+    text-align: center;
+}
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+.hard, .soft, .language, .card {
+    background-color: rgba(128, 128, 128, 0.295);
+    padding: 15px 35px;
+    border-bottom-left-radius: 0.7rem;
+    border-top-right-radius: 0.7rem;
+} 
+#education .educationDate {
+    padding: 5px 0;
+    border-bottom-left-radius: 0.7rem;
+    border-top-right-radius: 0.7rem;
+    background-color: #cdfcd7;
+    box-shadow: 0 0 7px #cdfcd7;
+    width: 120px;
+    text-align: center;
+    font-weight: bolder;
+}
+#portfolio .project {
+    background-color: rgba(128, 128, 128, 0.295);
+    margin-bottom: 70px;
+    border-bottom-left-radius: 0.7rem;
+    border-top-right-radius: 0.7rem;
+    padding: 5px 5px 15px 25px;
+}
+#portfolio .project h2 {
+    text-align: left;
+    margin-left: -10px;
+}
+#portfolio .project p {
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+}
+#portfolio .project a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid #00ddad;
+    box-shadow: 0 0 7px #00ddad;
+    padding: 0 5px;
+    border-radius: 7px;
+}
+#skills .skillProgress {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#contacts h1 {
+    margin-top: 7rem;
+}
+#contacts .column {
+    margin-top: 200px;
+    display: flex;
+    margin-right: 25px;
+    justify-content: space-between;
+}
+#contacts .column div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contacts .column div:nth-child(2n):hover {
+    block-size: fit-content;
+    box-shadow: 0px 2px 15px #00ddad;
+    border-radius: 15px;
+}
+#contacts .column h2 {
+    margin-left: 25px;
+}
+.progressbar {
+    width: 160px;
+    block-size: fit-content;
+    margin-left: 20px
+}
