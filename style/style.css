@@ -98,7 +98,8 @@ h2 {
     letter-spacing: 2px;
 }
 p {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2rem;
     font-size: 1rem;
     color: #cdfcd7;
 }
@@ -140,10 +141,12 @@ p {
 }
 .hard, .soft, .language, .card {
     background-color: rgba(128, 128, 128, 0.295);
-    padding: 15px 35px;
+    padding: 15px 20px;
     border-bottom-left-radius: 0.7rem;
     border-top-right-radius: 0.7rem;
 } 
+.card {
+}
 #education .educationDate {
     padding: 5px 0;
     border-bottom-left-radius: 0.7rem;
