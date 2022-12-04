@@ -79,10 +79,8 @@ a {
     
 }
 #homepage .headshot img {
-    border-radius: 50%;
-    background-color: wheat;
-    height: 300px;
-    width: 300px;
+    height: 500px;
+    width: 500px;
     margin-left: 25px;
 }
 h1 {
