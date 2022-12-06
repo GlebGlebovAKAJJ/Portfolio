@@ -29,10 +29,8 @@ for (let skill in skillboard) {
           className: 'progress-text',
           style: {
             color: '#cdfcd7',
-            fontSize: '12px',
-            position: 'absolute',
-            top: '-20px',
-            left: '135px',
+            position: 'relative',
+            textAlign: 'right',
             padding: 0,
             margin: 0,
             transform: null,

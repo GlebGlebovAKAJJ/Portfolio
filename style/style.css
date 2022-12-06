@@ -5,10 +5,161 @@ html {
     font-size: 16px;
 }
 #wrapper {
-    position: relative;
     margin: 0 auto;
-    width: 1400px;
+    max-width: 1200px;
 }
+
+
+@media (min-width:1201px) {
+    #wrapper {
+        min-width: 1400px;
+    }
+    #menu {
+        font-size: 1.5rem;
+        }
+    h1 {
+            font-size: 4rem;
+        }
+    h2 {
+            font-size: 2rem;
+        }
+    p {
+            font-size: 1rem;
+        }
+    #navigation #logo svg {
+            width: 70px;
+            height: 80px;
+        }
+    #homepage .headshot img {
+            height: 500px;
+            width: 500px;
+            margin-left: 25px;
+        }
+        .progressbar {
+             width: 160px;
+        }
+        #education .card p {
+            margin: 15px;
+            text-align: center;
+        }
+        #education .card  {
+            margin: 25px;
+        }
+        #contacts .container {
+             justify-content: space-between;
+        }
+        
+}
+
+@media (max-width:1200px){
+    #wrapper {
+        max-width: 970px;
+    }
+    #menu {
+    font-size: 1.5rem;
+    }
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    #navigation #logo svg {
+        width: 70px;
+        height: 80px;
+    }
+    #homepage .headshot img {
+        height: 500px;
+        width: 500px;
+        margin-left: 25px;
+    }
+    .progressbar {
+        width: 80px;
+   }
+   .hard {
+    width: 25%;
+   }
+   .soft {
+    width: 29%;
+   }
+   .language {
+    width: 25%;
+   }
+   #education .card {
+    margin: 15px 15px;
+    text-align: center;
+   }
+   #contacts .container {
+    flex-wrap: wrap;
+    justify-content: space-around;
+   }
+}
+
+@media (max-width:992px){
+    #wrapper {
+        max-width: 750px;
+    }
+    #menu {
+        font-size: 1rem;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+     p {
+            font-size: 0.8rem;
+    }
+    #navigation #logo svg {
+        width: 40px;
+        height: 50px;
+    }
+    #homepage .headshot img {
+        height: 400px;
+        width: 400px;
+        margin-left: 25px;
+    }
+}
+
+@media (max-width:767px){
+    #wrapper {
+        max-width: none;
+        margin: 0 15px;
+    }
+    #navigation {
+        justify-content: space-evenly;
+    }
+    #homepage {
+        flex-direction: column;
+    }
+    h1, p {
+        text-align: center;
+    }
+    #homepage .headshot img {
+        width: 350px;
+        height: 350px;
+    }
+    #skills .container {
+        flex-direction: column;
+        
+    }
+    .hard, .soft, .language {
+        margin: 15px  auto;
+        width: 60%;
+     }
+     .progressbar {
+        width: 160px;
+     }
+     #education .container {
+        flex-direction: column;
+     }
+}
+
+
 header {
     margin-top: 15px;
 }
@@ -33,9 +184,7 @@ svg:hover feDropShadow{
     flood-color: #06deb5;
   }
 #menu {
-    position: absolute;
-    right: 0;
-    font-size: 1.5rem;
+    margin-left: auto;
     list-style: none;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -78,19 +227,13 @@ a {
     border-radius: 50%;
     
 }
-#homepage .headshot img {
-    height: 500px;
-    width: 500px;
-    margin-left: 25px;
-}
+
 h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 4rem;
     color: #00ddad;
 }
 h2 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 2rem;
     color: #00ddad;
     text-align: center;
     letter-spacing: 2px;
@@ -98,7 +241,6 @@ h2 {
 p {
     font-family: 'Montserrat', sans-serif;
     line-height: 2rem;
-    font-size: 1rem;
     color: #cdfcd7;
 }
 #about {
@@ -113,7 +255,6 @@ p {
 }
 #about h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 64px;
     letter-spacing: 5px;
 }
 #about article {
@@ -153,6 +294,10 @@ p {
     text-align: center;
     font-weight: bolder;
 }
+#portfolio .container {
+    flex-direction: column;
+    margin: 15px;
+}
 #portfolio .project {
     background-color: rgba(128, 128, 128, 0.295);
     margin-bottom: 70px;
@@ -167,6 +312,7 @@ p {
 #portfolio .project p {
     letter-spacing: 1px;
     line-height: 1.5rem;
+    text-align: left;
 }
 #portfolio .project a:hover {
     text-decoration: none;
@@ -183,27 +329,30 @@ p {
 #contacts h1 {
     margin-top: 7rem;
 }
-#contacts .column {
+#contacts .container {
     margin-top: 200px;
     display: flex;
     margin-right: 25px;
-    justify-content: space-between;
 }
-#contacts .column div {
+#contacts .container div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#contacts .column div:nth-child(2n):hover {
+#contacts .container div:nth-child(2n):hover {
     block-size: fit-content;
     box-shadow: 0px 2px 15px #00ddad;
     border-radius: 15px;
 }
-#contacts .column h2 {
+#contacts .container h2 {
     margin-left: 25px;
 }
 .progressbar {
-    width: 160px;
     block-size: fit-content;
-    margin-left: 20px
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.progress-text {
+    font-size: 12px;
 }
