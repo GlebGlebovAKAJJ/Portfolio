@@ -2,30 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      http-equiv="X-UA-Compatible"
-      content="IE=edge"
-    />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Навыки</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/1.0.1/progressbar.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="../style/style.css"
-    />
-    <link
-      type="image/x-icon"
-      href="../style/favicon.ico"
-      rel="shortcut icon"
-    />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin
-    />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link type="image/x-icon" href="../style/favicon.ico" rel="shortcut icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
       rel="stylesheet"
@@ -45,10 +28,7 @@
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <defs>
-                  <filter
-                    id="shadow"
-                    class="shadow"
-                  >
+                  <filter id="shadow" class="shadow">
                     <feDropShadow
                       dx="0"
                       dy="0"
@@ -65,14 +45,8 @@
                     x2="222.392"
                     y2="54.5"
                   >
-                    <stop
-                      offset="0"
-                      stop-color="#40b99d"
-                    />
-                    <stop
-                      offset="1"
-                      stop-color="#2ed8de"
-                    />
+                    <stop offset="0" stop-color="#40b99d" />
+                    <stop offset="1" stop-color="#2ed8de" />
                   </linearGradient>
                 </defs>
 
@@ -84,8 +58,20 @@
               </svg>
             </a>
           </div>
+          <div class="blanket inactive">
+            <ul id="menu_list">
+              <li><a href="./aboutMe.html">Обо мне</a></li>
+              <li><a href="./skills.html">Навыки</a></li>
+              <li><a href="./education.html">Образование</a></li>
+              <li><a href="./portfolio.html">Портфолио</a></li>
+              <li><a href="./contacts.html">Контакты</a></li>
+            </ul>
+          </div>
+          <div id="burger_menu">
+            <span></span>
+          </div>
           <div id="menu">
-            <ul>
+            <ul id="menu_list">
               <li><a href="./aboutMe.html">Обо мне</a></li>
               <li><a href="./skills.html">Навыки</a></li>
               <li><a href="./education.html">Образование</a></li>
@@ -102,127 +88,80 @@
             <h2>Hard skills</h2>
             <div class="skillProgress">
               <div class="skill"><p>JavaScript</p></div>
-              <div
-                class="progressbar"
-                id="JS"
-              ></div>
+              <div class="progressbar" id="JS"></div>
             </div>
             <div class="skillProgress">
               <div class="skill"><p>DOM Manipulation</p></div>
-              <div
-                class="progressbar"
-                id="DOM"
-              ></div>
+              <div class="progressbar" id="DOM"></div>
             </div>
             <div class="skillProgress">
               <div class="skill"><p>VUE</p></div>
-              <div
-                class="progressbar"
-                id="VUE"
-              ></div>
+              <div class="progressbar" id="VUE"></div>
             </div>
             <div class="skillProgress">
               <div class="skill"><p>HTML/CSS</p></div>
-              <div
-                class="progressbar"
-                id="HTMLCSS"
-              ></div>
+              <div class="progressbar" id="HTMLCSS"></div>
             </div>
             <div class="skillProgress">
               <div class="skill"><p>GIT</p></div>
-              <div
-                class="progressbar"
-                id="GIT"
-              ></div>
+              <div class="progressbar" id="GIT"></div>
             </div>
             <div class="skillProgress">
               <div class="skill"><p>JSON</p></div>
-              <div
-                class="progressbar"
-                id="JSON"
-              ></div>
+              <div class="progressbar" id="JSON"></div>
             </div>
             <div class="skillProgress">
               <div class="skill"><p>AJAX</p></div>
-              <div
-                class="progressbar"
-                id="AJAX"
-              ></div>
+              <div class="progressbar" id="AJAX"></div>
             </div>
           </div>
           <div class="soft">
             <h2>Soft skills</h2>
             <div class="skillProgress">
               <div class="skill"><p>Коммуникация</p></div>
-              <div
-                class="progressbar"
-                id="Communication"
-              ></div>
+              <div class="progressbar" id="Communication"></div>
             </div>
             <div class="skillProgress">
               <div class="skill"><p>Адаптация</p></div>
-              <div
-                class="progressbar"
-                id="Adaptation"
-              ></div>
+              <div class="progressbar" id="Adaptation"></div>
             </div>
 
             <div class="skillProgress">
               <div class="skill"><p>Критическое мышление</p></div>
-              <div
-                class="progressbar"
-                id="CritThinking"
-              ></div>
+              <div class="progressbar" id="CritThinking"></div>
             </div>
             <div class="skillProgress">
               <div class="skill"><p>Аналитические способности</p></div>
-              <div
-                class="progressbar"
-                id="AnalyzeThinking"
-              ></div>
+              <div class="progressbar" id="AnalyzeThinking"></div>
             </div>
             <div class="skillProgress">
               <div class="skill"><p>Умение решать проблемы</p></div>
-              <div
-                class="progressbar"
-                id="TroubleSolving"
-              ></div>
+              <div class="progressbar" id="TroubleSolving"></div>
             </div>
             <div class="skillProgress">
               <div class="skill"><p>Тайм-менеджмент</p></div>
-              <div
-                class="progressbar"
-                id="TimeManagment"
-              ></div>
+              <div class="progressbar" id="TimeManagment"></div>
             </div>
             <div class="skillProgress">
               <div class="skill"><p>Самомотивация</p></div>
-              <div
-                class="progressbar"
-                id="SelfMotivation"
-              ></div>
+              <div class="progressbar" id="SelfMotivation"></div>
             </div>
           </div>
           <div class="language">
             <h2>Lang skills</h2>
             <div class="skillProgress">
               <div class="skill"><p>Русский</p></div>
-              <div
-                class="progressbar"
-                id="Russian"
-              ></div>
+              <div class="progressbar" id="Russian"></div>
             </div>
             <div class="skillProgress">
               <div class="skill"><p>Английский</p></div>
-              <div
-                class="progressbar"
-                id="English"
-              ></div>
+              <div class="progressbar" id="English"></div>
             </div>
           </div>
         </div>
       </section>
     </div>
+    <script src="../index.js"></script>
   </body>
   <script src="../progressLoadBar.js"></script>
 </html>

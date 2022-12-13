@@ -8,55 +8,69 @@ html {
     margin: 0 auto;
     max-width: 1200px;
 }
-
-
+.inactive {
+    display: none;
+}
+.lock {
+    overflow: hidden;
+}
 @media (min-width:1201px) {
+    
     #wrapper {
         min-width: 1400px;
     }
     #menu {
         font-size: 1.5rem;
-        }
+    }
+    #menu ul li {
+            display: inline;
+            margin-right: 20px;
+    }
     h1 {
             font-size: 4rem;
-        }
+    }
     h2 {
             font-size: 2rem;
-        }
+    }
     p {
             font-size: 1rem;
-        }
+    }
     #navigation #logo svg {
             width: 70px;
             height: 80px;
-        }
+    }
     #homepage .headshot img {
             height: 500px;
             width: 500px;
             margin-left: 25px;
         }
-        .progressbar {
+    .progressbar {
              width: 160px;
-        }
-        #education .card p {
+    }
+    #education .card p {
             margin: 15px;
             text-align: center;
-        }
-        #education .card  {
+    }
+    #education .card  {
             margin: 25px;
-        }
-        #contacts .container {
+    }
+    #contacts .container {
              justify-content: space-between;
-        }
-        
+    }
+    #burger_menu {
+            display: none
+    }
 }
-
 @media (max-width:1200px){
     #wrapper {
         max-width: 970px;
     }
     #menu {
     font-size: 1.5rem;
+    }
+    #menu ul li {
+        display: inline;
+        margin-right: 20px;
     }
     h1 {
         font-size: 4rem;
@@ -97,7 +111,6 @@ html {
     justify-content: space-around;
    }
 }
-
 @media (max-width:992px){
     #wrapper {
         max-width: 750px;
@@ -124,14 +137,17 @@ html {
         margin-left: 25px;
     }
 }
-
 @media (max-width:767px){
     #wrapper {
         max-width: none;
         margin: 0 15px;
     }
     #navigation {
-        justify-content: space-evenly;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #menu {
+        display: none;
     }
     #homepage {
         flex-direction: column;
@@ -145,7 +161,6 @@ html {
     }
     #skills .container {
         flex-direction: column;
-        
     }
     .hard, .soft, .language {
         margin: 15px  auto;
@@ -157,9 +172,64 @@ html {
      #education .container {
         flex-direction: column;
      }
+     #burger_menu {
+        z-index: 5;
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 18px;
+        cursor: pointer;
+        margin-right: 25px;
+     }
+     #burger_menu::before,
+     #burger_menu::after,
+     #burger_menu span {
+        left: 0;
+        position: absolute;
+        height: 10%;
+        width: 100%;
+        transition: all 0.3s ease 0s;
+        background-color: #00ddad;
+     }
+     #burger_menu::before,
+     #burger_menu::after {
+        content: "";
+     }
+     #burger_menu::before {
+        top: 0;
+     }
+     #burger_menu::after {
+        bottom: 0;
+     }
+     #burger_menu span {
+        top: 45%;
+        transform: scal(1) translate(0px, -50%);
+     }
+    .blanket {
+        z-index: 5;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: left 0.3s ease 0s;
+        background-color: rgba(0, 0, 0, 0.900);
+        text-align: center;
+        overflow: auto;
+    }
+    .blanket #menu_list {
+        font-size: 2rem;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        transform: translateY(50%);
+
+    }
+    .blanket #menu_list li {
+        margin-bottom: 50px;
+    }
+    .blanket #menu_list li:last-child {
+        margin-bottom: 0;
+    }
 }
-
-
 header {
     margin-top: 15px;
 }
@@ -199,10 +269,6 @@ a {
     text-decoration: none;
     color: #00ddad
 }
-#menu ul li {
-    display: inline;
-    margin-right: 20px;
-}
 #homepage {
     display: flex;
     align-items: center;
@@ -227,7 +293,6 @@ a {
     border-radius: 50%;
     
 }
-
 h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #00ddad;
@@ -314,7 +379,7 @@ p {
     line-height: 1.5rem;
     text-align: left;
 }
-#portfolio .project a:hover {
+#portfolio .project a:hover, .blanket #menu_list li a:hover {
     text-decoration: none;
     border-bottom: 1px solid #00ddad;
     box-shadow: 0 0 7px #00ddad;
